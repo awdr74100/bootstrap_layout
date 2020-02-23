@@ -1,0 +1,64 @@
+.header {
+  position: relative;
+  &--push {
+    margin-top: -90px;
+  }
+  &__img {
+    height: 496px;
+  }
+  &__link {
+    height: 256px;
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+    &__title {
+      letter-spacing: 10px;
+      font-size: 24px;
+      z-index: 3;
+    }
+    &__img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      filter: blur(5px);
+      transition: filter 0.5s;
+      z-index: 1;
+    }
+    &__bg {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      background-color: rgba($primary, 0.8);
+      transition: background-color 0.5s;
+      z-index: 2;
+    }
+    &--border {
+      border-left: 1px solid #fff;
+    }
+    &--active,
+    &:hover {
+      color: $primary;
+      font-weight: bolder;
+    }
+    &--active &__bg,
+    &:hover &__bg {
+      background-color: rgba($accent, 0.8);
+    }
+    &--active &__img,
+    &:hover &__img {
+      filter: blur(0px);
+    }
+  }
+  &__title {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+}

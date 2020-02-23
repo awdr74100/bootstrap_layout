@@ -1,0 +1,24 @@
+.section {
+  &__img {
+    min-height: 250px;
+    @include media-breakpoint-down(md) {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+
+  &__content {
+    max-height: 420px;
+    line-height: 2.3;
+    @include media-breakpoint-up(md) {
+      line-height: 2.5;
+    }
+  }
+
+  &--stress {
+    @include media-breakpoint-up(md) {
+      margin-top: -20px;
+      margin-bottom: -20px;
+    }
+  }
+}

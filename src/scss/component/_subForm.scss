@@ -1,0 +1,24 @@
+.subForm {
+  position: relative;
+  display: flex;
+  &__input {
+    width: 100%;
+    height: 56px;
+    background-color: $primary-200;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: $primary;
+  }
+  &__btn {
+    width: 64px;
+  }
+}
