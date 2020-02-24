@@ -66,7 +66,7 @@
         ></a>
       </div>
     </nav>
-    <!-- checkout-1 -->
+    <!-- checkout-2 -->
     <section class="container my-md-5">
       <div class="row">
         <!-- left -->
@@ -78,20 +78,46 @@
               <div class="col-6 d-flex align-items-center">
                 <!-- step -->
                 <div class="step">
+                  <div class="step__circle step__circle--complete"></div>
                   <div class="step__circle step__circle--active"></div>
-                  <div class="step__circle"></div>
                   <div class="step__circle"></div>
                 </div>
               </div>
             </div>
-            <!-- 姓名 -->
+            <!-- 信用卡卡號 -->
+            <div class="form-group">
+              <label for="cardNumber" class="h4">信用卡卡號</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="cardNumber"
+                  class="form-control form-control-lg bg-primary-lighter border-right-0"
+                  placeholder="9012-3456-7890-1234"
+                />
+                <div class="input-group-prepend">
+                  <span
+                    class="input-group-text bg-primary-lighter text-primary border-primary-lighter pl-4 pr-4"
+                    id="basic-addon3"
+                    ><i class="fas fa-credit-card"></i
+                  ></span>
+                </div>
+              </div>
+              <!-- <label for="cardNumber" class="h4">信用卡卡號</label> -->
+              <!-- <input
+                type="text"
+                id="cardNumber"
+                class="form-control form-control-lg bg-primary-lighter"
+                placeholder="9012-3456-7890-1234"
+              /> -->
+            </div>
+            <!-- 持卡人姓名 -->
+            <label for="cardName" class="h4">持卡人姓名</label>
             <div class="form-row">
               <div class="col-6">
                 <div class="form-group">
-                  <label for="lastname" class="h4">姓氏</label>
                   <input
                     type="text"
-                    id="lastname"
+                    id="cardName"
                     class="form-control form-control-lg bg-primary-lighter"
                     placeholder="王"
                   />
@@ -99,47 +125,47 @@
               </div>
               <div class="col-6">
                 <div class="form-group">
-                  <label for="firstname" class="h4">名子</label>
                   <input
                     type="text"
-                    id="firstname"
+                    id="cardName"
                     class="form-control form-control-lg bg-primary-lighter"
                     placeholder="小明"
                   />
                 </div>
               </div>
             </div>
-            <!-- 電話 -->
-            <div class="form-group">
-              <label for="tel" class="h4">電話</label>
-              <input
-                type="tel"
-                id="tel"
-                class="form-control form-control-lg bg-primary-lighter"
-                placeholder="0912-345-678"
-              />
-            </div>
-            <!-- 地址 -->
-            <label for="city" class="h4">地址</label>
+            <!-- 有效期限 -->
+            <label for="valid" class="h4">有效期限</label>
             <div class="form-row">
               <div class="col-6">
                 <div class="form-group">
-                  <select class="form-control form-control-lg bg-primary-lighter">
-                    <option value="高雄市">高雄市</option>
+                  <select class="form-control form-control-lg bg-primary-lighter" id="valid">
+                    <option value="高雄市">月</option>
                   </select>
                 </div>
               </div>
               <div class="col-6">
                 <div class="form-group">
                   <select class="form-control form-control-lg bg-primary-lighter">
-                    <option>新興區</option>
+                    <option>年</option>
                   </select>
                 </div>
               </div>
             </div>
-            <input type="text" class="form-control form-control-lg bg-primary-lighter" placeholder="幸福路 520 號" />
+            <!-- 背面末三碼 -->
+            <div class="form-row">
+              <div class="col-6">
+                <label for="securityCode" class="h4">背面末三碼</label>
+                <input
+                  type="number"
+                  class="form-control form-control-lg bg-primary-lighter"
+                  id="securityCode"
+                  placeholder="123"
+                />
+              </div>
+            </div>
           </div>
-          <a href="checkout-2.html" class="btn btn-accent btn-block btn-lg text-primary font-weight-bolder">下一步</a>
+          <a href="checkout-3.html" class="btn btn-accent btn-block btn-lg text-primary font-weight-bolder">下一步</a>
         </div>
         <!-- right -->
         <div class="col-md-4 d-md-block d-none">

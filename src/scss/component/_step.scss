@@ -24,6 +24,20 @@
         border-radius: 50%;
       }
     }
+    &--complete {
+      background-color: $primary-200;
+      color: $primary;
+      &:after {
+        content: '';
+        background-image: url('../img/check.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        width: 12px;
+        height: 12px;
+        display: block;
+      }
+    }
   }
   &:after {
     content: '';
