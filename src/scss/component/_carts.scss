@@ -1,0 +1,63 @@
+.carts {
+  h1 {
+    @include media-breakpoint-down(md) {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+  &__row {
+    & + .carts__row {
+      @include media-breakpoint-up(md) {
+        border-top: solid 1px $primary-200;
+      }
+    }
+  }
+  &__img {
+    height: 110px;
+    min-width: 110px;
+  }
+  &__control {
+    width: 48 * 3px;
+    input {
+      height: 48px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border: none;
+      border-top: 1px solid $primary-200;
+      border-bottom: 1px solid $primary-200;
+    }
+    button {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+  &__price {
+    @include media-breakpoint-down(md) {
+      border-top: solid 1px $primary-200;
+      border-bottom: solid 1px $primary-200;
+    }
+  }
+  &__abstract {
+    @include media-breakpoint-up(md) {
+      background-color: $primary;
+    }
+    &__title {
+      background-color: $primary-200;
+      color: theme-color('primary');
+      @include media-breakpoint-up(md) {
+        background-color: theme-color('primary');
+        color: white;
+      }
+    }
+    &__text {
+      color: #fff;
+      @include media-breakpoint-down(md) {
+        color: $primary;
+      }
+    }
+    // &__btn{
+    //   margin-left: -15px;
+    //   margin-right: -15px;
+    // }
+  }
+}
