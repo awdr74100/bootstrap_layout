@@ -66,111 +66,131 @@
         ></a>
       </div>
     </nav>
-    <!-- cart -->
+    <!-- checkout-1 -->
     <section class="container my-md-5">
-      <div class="row carts">
-        <div class="col-md-8">
-          <h1 class="h4 text-center bg-primary-lighter mb-3 py-3 text-primary font-weight-bolder">你的購物車</h1>
-          <!-- row -->
-          <div class="carts__row d-flex flex-column flex-md-row pt-4 pb-4">
-            <!-- mobile - top -->
-            <div class="d-flex flex-grow-1">
-              <!-- img -->
-              <div
-                class="bg-cover carts__img flex-md-grow-0 flex-grow-1"
-                style="background-image: url(https://bit.ly/2zBDAxX);"
-              ></div>
-              <!-- content -->
-              <div
-                class="d-flex align-items-md-center flex-md-row flex-column ml-md-5 ml-3 flex-grow-0 flex-md-grow-1 justify-content-between"
-              >
-                <!-- name -->
-                <div class="d-flex flex-column text-primary">
-                  <p class="mb-0 h5">焦糖馬卡龍</p>
-                  <p class="mb-0">NT$ 450</p>
+      <div class="row">
+        <div class="col-md-8 pl-0 pr-0 pl-md-3 pr-md-3">
+          <div class="p-5 bg-primary text-primary-lighter">
+            <!-- 目前狀態 -->
+            <div class="form-row mb-5">
+              <div class="col-6"><h1 class="mb-0">運送</h1></div>
+              <div class="col-6">4</div>
+            </div>
+            <!-- 姓名 -->
+            <div class="form-row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="lastname" class="h4">姓氏</label>
+                  <input
+                    type="text"
+                    id="lastname"
+                    class="form-control form-control-lg bg-primary-lighter"
+                    placeholder="王"
+                  />
                 </div>
-                <!-- control -->
-                <div class="carts__control">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <button class="btn btn-brand-light"><i class="fas fa-minus text-primary-light"></i></button>
-                    </div>
-                    <input type="text" class="form-control text-center" value="2" />
-                    <div class="input-group-prepend">
-                      <button class="btn btn-brand-light"><i class="fas fa-plus text-primary-light"></i></button>
-                    </div>
-                  </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="firstname" class="h4">名子</label>
+                  <input
+                    type="text"
+                    id="firstname"
+                    class="form-control form-control-lg bg-primary-lighter"
+                    placeholder="小明"
+                  />
                 </div>
               </div>
             </div>
-            <!-- mobild - bottom -->
-            <div class="carts__price d-flex align-items-center justify-content-end ml-md-5 mt-2 mt-md-0 py-2 py-md-0 ">
-              <p class="mb-0 h5 text-primary font-weight-bolder ">NT$ 900</p>
-              <a href="#" class="btn btn-brand-light border-0 text-primary ml-5 d-md-block d-none"
-                ><i class="far fa-trash-alt"></i
-              ></a>
+            <!-- 電話 -->
+            <div class="form-group">
+              <label for="tel" class="h4">電話</label>
+              <input
+                type="tel"
+                id="tel"
+                class="form-control form-control-lg bg-primary-lighter"
+                placeholder="0912-345-678"
+              />
             </div>
-          </div>
-          <!-- row -->
-          <div class="carts__row d-flex flex-column flex-md-row pt-4 pb-4">
-            <!-- mobile - top -->
-            <div class="d-flex flex-grow-1">
-              <!-- img -->
-              <div
-                class="bg-cover carts__img flex-md-grow-0 flex-grow-1"
-                style="background-image: url(https://bit.ly/2zBDAxX);"
-              ></div>
-              <!-- content -->
-              <div
-                class="d-flex align-items-md-center flex-md-row flex-column ml-md-5 ml-3 flex-grow-0 flex-md-grow-1 justify-content-between"
-              >
-                <!-- name -->
-                <div class="d-flex flex-column text-primary">
-                  <p class="mb-0 h5">焦糖馬卡龍</p>
-                  <p class="mb-0">NT$ 450</p>
+            <!-- 地址 -->
+            <label for="city" class="h4">地址</label>
+            <div class="form-row">
+              <div class="col-6">
+                <div class="form-group">
+                  <select class="form-control form-control-lg bg-primary-lighter">
+                    <option value="高雄市">高雄市</option>
+                  </select>
                 </div>
-                <!-- control -->
-                <div class="carts__control">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <button class="btn btn-brand-light"><i class="fas fa-minus text-primary-light"></i></button>
-                    </div>
-                    <input type="text" class="form-control text-center" value="2" />
-                    <div class="input-group-prepend">
-                      <button class="btn btn-brand-light"><i class="fas fa-plus text-primary-light"></i></button>
-                    </div>
-                  </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <select class="form-control form-control-lg bg-primary-lighter">
+                    <option>新興區</option>
+                  </select>
                 </div>
               </div>
             </div>
-            <!-- mobild - bottom -->
-            <div class="carts__price d-flex align-items-center justify-content-end ml-md-5 mt-2 mt-md-0 py-2 py-md-0 ">
-              <p class="mb-0 h5 text-primary font-weight-bolder ">NT$ 900</p>
-              <a href="#" class="btn btn-brand-light border-0 text-primary ml-5 d-md-block d-none"
-                ><i class="far fa-trash-alt"></i
-              ></a>
-            </div>
+            <input type="text" class="form-control form-control-lg bg-primary-lighter" placeholder="幸福路 520 號" />
           </div>
+          <a href="#" class="btn btn-accent btn-block btn-lg text-primary">下一步</a>
         </div>
-        <div class="col-md-4 pl-0 pr-0 pl-md-3 pr-md-3">
-          <div class="carts__abstract pt-3">
-            <h2 class="h4 text-center carts__abstract__title py-3 px-3">訂單摘要</h2>
-            <hr class="border-white mx-3" />
-            <div class="d-flex justify-content-between mx-3">
-              <p class="mb-0 carts__abstract__text">小計</p>
-              <p class="mb-0 carts__abstract__text">NT$ 2,700</p>
+        <div class="col-md-4 d-md-block d-none">
+          <!-- 訂單摘要 -->
+          <div class="card text-primary-light  border-primary-lighter">
+            <h2 class="card-header h3 text-center bg-primary-lighter border-primary-lighter font-weight-bolder">
+              訂單摘要
+            </h2>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="mb-0">小計</p>
+                <p class="mb-0">NT$ 2,700</p>
+              </div>
+              <div class="d-flex justify-content-between mt-2">
+                <p class="mb-0">運費</p>
+                <p class="mb-0">NT$ 300</p>
+              </div>
+              <div class="d-flex justify-content-between mt-2">
+                <p class="mb-0 h4 font-weight-bolder">總計</p>
+                <p class="mb-0 h4 font-weight-bolder">NT$ 3,000</p>
+              </div>
             </div>
-            <div class="d-flex justify-content-between mt-2 mx-3">
-              <p class="mb-0 carts__abstract__text">運費</p>
-              <p class="mb-0 carts__abstract__text">NT$ 300</p>
+          </div>
+          <!-- 購物清單 -->
+          <div class="card text-primary-light  border-primary-lighter mt-4">
+            <h2 class="card-header h3 text-center bg-primary-lighter border-primary-lighter font-weight-bolder">
+              購物清單
+            </h2>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div
+                  class="img-fluid bg-cover"
+                  style="background-image: url(https://bit.ly/2zBDAxX);width: 120px;height: 80px;"
+                ></div>
+                <div class="d-flex flex-column justify-content-center">
+                  <p class="mb-0 h5">焦糖馬卡龍 (2)</p>
+                  <p class="mb-0">NT$ 900</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between mt-3">
+                <div
+                  class="img-fluid bg-cover"
+                  style="background-image: url(https://bit.ly/2zL5jN7);width: 120px;height: 80px;"
+                ></div>
+                <div class="d-flex flex-column justify-content-center">
+                  <p class="mb-0 h5">焦糖馬卡龍 (2)</p>
+                  <p class="mb-0">NT$ 900</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between mt-3">
+                <div
+                  class="img-fluid bg-cover"
+                  style="background-image: url(https://bit.ly/2OUteif);width: 120px;height: 80px;"
+                ></div>
+                <div class="d-flex flex-column justify-content-center">
+                  <p class="mb-0 h5">焦糖馬卡龍 (2)</p>
+                  <p class="mb-0">NT$ 900</p>
+                </div>
+              </div>
             </div>
-            <div class="d-flex justify-content-between mt-2 mb-4 mx-3">
-              <p class="mb-0 h4 font-weight-bolder carts__abstract__text">總計</p>
-              <p class="mb-0 h4 font-weight-bolder carts__abstract__text">NT$ 3000</p>
-            </div>
-            <a href="checkout-1.html" class="btn btn-accent btn-block btn-lg font-weight-bolder carts__abstract__btn"
-              >結帳</a
-            >
           </div>
         </div>
       </div>
