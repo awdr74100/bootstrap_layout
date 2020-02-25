@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"gulp serve",
-    "build":"gulp build --env production"
+    "dev": "gulp serve",
+    "build": "gulp build --env production"
   },
   "author": "",
   "license": "ISC",

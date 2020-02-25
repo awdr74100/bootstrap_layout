@@ -66,7 +66,7 @@
         ></a>
       </div>
     </nav>
-    <!-- checkout-2 -->
+    <!-- checkout-3-1 -->
     <section class="container my-md-5">
       <div class="row">
         <!-- left -->
@@ -74,93 +74,70 @@
           <div class="p-5 bg-primary text-primary-lighter">
             <!-- 目前狀態 -->
             <div class="form-row mb-5">
-              <div class="col-6"><h1 class="mb-0">付款</h1></div>
+              <div class="col-6"><h1 class="mb-0">發票</h1></div>
               <div class="col-6 d-flex align-items-center">
                 <!-- step -->
                 <div class="step">
                   <div class="step__circle step__circle--complete">
                     <i class="fas fa-check"></i>
                   </div>
+                  <div class="step__circle step__circle--complete">
+                    <i class="fas fa-check"></i>
+                  </div>
                   <div class="step__circle step__circle--active"></div>
-                  <div class="step__circle"></div>
                 </div>
               </div>
             </div>
-            <!-- 信用卡卡號 -->
-            <div class="form-group">
-              <label for="cardNumber" class="h4">信用卡卡號</label>
-              <div class="input-group">
-                <input
-                  type="text"
-                  id="cardNumber"
-                  class="form-control form-control-lg bg-primary-lighter border-right-0"
-                  placeholder="9012-3456-7890-1234"
-                />
-                <div class="input-group-prepend">
-                  <span
-                    class="input-group-text bg-primary-lighter text-primary border-primary-lighter pl-4 pr-4"
-                    id="basic-addon3"
-                    ><i class="fas fa-credit-card"></i
-                  ></span>
-                </div>
+            <!-- 發票型態 -->
+            <div class="btn-group btn-group-lg w-100 mb-5" role="group" aria-label="Basic example">
+              <a
+                href="checkout-3-1.html"
+                type="button"
+                class="btn border-primary-lighter text-primary-lighter font-weight-bolder"
+                >電子發票</a
+              >
+              <a href="#" type="button" class="btn btn-primary-lighter text-primary font-weight-bolder">
+                郵寄發票
+              </a>
+            </div>
+            <!-- 地址 (top) -->
+            <div class="d-flex justify-content-between align-items-center">
+              <label for="city" class="h4">地址</label>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1" />
+                <label class="custom-control-label" for="customCheck1">同運送地址</label>
               </div>
             </div>
-            <!-- 持卡人姓名 -->
-            <label for="cardName" class="h4">持卡人姓名</label>
+            <!-- 地址 (bottm) -->
             <div class="form-row">
               <div class="col-6">
                 <div class="form-group">
-                  <input
-                    type="text"
-                    id="cardName"
-                    class="form-control form-control-lg bg-primary-lighter"
-                    placeholder="王"
-                  />
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    id="cardName"
-                    class="form-control form-control-lg bg-primary-lighter"
-                    placeholder="小明"
-                  />
-                </div>
-              </div>
-            </div>
-            <!-- 有效期限 -->
-            <label for="valid" class="h4">有效期限</label>
-            <div class="form-row">
-              <div class="col-6">
-                <div class="form-group">
-                  <select class="form-control form-control-lg bg-primary-lighter" id="valid">
-                    <option value="高雄市">月</option>
+                  <select class="form-control form-control-lg bg-primary-lighter">
+                    <option value="高雄市">高雄市</option>
                   </select>
                 </div>
               </div>
               <div class="col-6">
                 <div class="form-group">
                   <select class="form-control form-control-lg bg-primary-lighter">
-                    <option>年</option>
+                    <option>新興區</option>
                   </select>
                 </div>
               </div>
             </div>
-            <!-- 背面末三碼 -->
-            <div class="form-row">
-              <div class="col-6">
-                <label for="securityCode" class="h4">背面末三碼</label>
-                <input
-                  type="number"
-                  class="form-control form-control-lg bg-primary-lighter"
-                  id="securityCode"
-                  placeholder="123"
-                />
-              </div>
+            <input type="text" class="form-control form-control-lg bg-primary-lighter" placeholder="幸福路 520 號" />
+            <!-- 統一編號 (選填) -->
+            <div class="form-group mt-3">
+              <label for="taxNumber" class="h4">統一編號 (選填)</label>
+              <input
+                type="number"
+                id="taxNumber"
+                class="form-control form-control-lg bg-primary-lighter"
+                placeholder="12345678"
+              />
             </div>
           </div>
-          <a href="checkout-3-1.html" class="btn btn-accent btn-block btn-lg text-primary font-weight-bolder">下一步</a>
+          <a href="success.html" class="btn btn-accent btn-block btn-lg text-primary font-weight-bolder">確認結帳</a>
         </div>
         <!-- right -->
         <div class="col-md-4 d-md-block d-none">
