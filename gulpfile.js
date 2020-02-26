@@ -46,7 +46,11 @@ const scssTask = () => {
 // 處理 vendor
 const vendorJS = () => {
   return gulp
-    .src(['./node_modules/jquery/dist/jquery.slim.min.js', './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'])
+    .src([
+      './node_modules/jquery/dist/jquery.slim.min.js',
+      './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+      './src/js/*.js',
+    ])
     .pipe(concat('vendor.js'))
     .pipe(gulp.dest('./dist/js'));
 };
@@ -74,6 +78,7 @@ const watchTask = () => {
   });
   gulp.watch('./src/*.html', htmlTask);
   gulp.watch('./src/**/*.scss', scssTask);
+  gulp.watch('./src/**/*.js', vendorJS);
 };
 
 module.exports = {

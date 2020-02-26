@@ -63,9 +63,15 @@
   }
   &__msg {
     position: absolute;
-    top: 128px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 300px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content{
+      width: 300px;
+    }
   }
 }
