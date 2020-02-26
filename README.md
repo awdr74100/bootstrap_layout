@@ -1,7 +1,7 @@
 ## 啟動本地伺服器
 
 ```bash
-$ npm run serve
+$ npm run dev
 ```
 
 ## 生產環境打包
