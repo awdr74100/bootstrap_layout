@@ -4,7 +4,7 @@
 $ npm run serve
 ```
 
-## 生產環境部屬
+## 生產環境打包
 
 ```bash
 $ npm run build
