@@ -16,5 +16,6 @@
   "start_url": "/bootstrap_layout/index.html",
   "background_color": "#3f5d45",
   "display": "standalone",
+  "scope":"/bootstrap_layout/",
   "theme_color": "#3f5d45"
 }
