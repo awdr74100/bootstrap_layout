@@ -58,7 +58,7 @@ const vendorJS = () => {
 // 處理圖片
 const imageTask = () => {
   return gulp
-    .src('./src/img/*')
+    .src('./src/img/**/*')
     .pipe(gulpif(argv === 'production', imagemin()))
     .pipe(gulp.dest('./dist/img'))
     .pipe(browserSync.stream());
@@ -67,6 +67,11 @@ const imageTask = () => {
 // 刪除緩存檔案
 const clear = () => {
   return del(['dist']);
+};
+
+// PWA 配置
+const pwaTask = () => {
+  return gulp.src(['./src/manifest.json', './src/sw.js']).pipe(gulp.dest('./dist'));
 };
 
 // 本地伺服器
@@ -82,6 +87,6 @@ const watchTask = () => {
 };
 
 module.exports = {
-  build: gulp.series(clear, gulp.parallel(htmlTask, scssTask, imageTask, vendorJS)),
-  serve: gulp.series(clear, gulp.parallel(htmlTask, scssTask, imageTask, vendorJS), watchTask),
+  build: gulp.series(clear, gulp.parallel(htmlTask, scssTask, imageTask, vendorJS, pwaTask)),
+  serve: gulp.series(clear, gulp.parallel(htmlTask, scssTask, imageTask, vendorJS, pwaTask), watchTask),
 };
